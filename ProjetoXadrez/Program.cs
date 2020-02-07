@@ -2,17 +2,20 @@
 using tabuleiro;
 using xadrez;
 
-namespace ProjetoXadrez
+namespace xadrez_console
 {
     class Program
     {
         static void Main(string[] args)
         {
+
             try
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
+
                 while (!partida.terminada)
                 {
+
                     try
                     {
                         Console.Clear();
@@ -48,7 +51,9 @@ namespace ProjetoXadrez
             {
                 Console.WriteLine(e.Message);
             }
+
             Console.ReadLine();
         }
     }
 }
+
